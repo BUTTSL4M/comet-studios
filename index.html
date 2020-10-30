@@ -1,0 +1,85 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+        <!--Style Sheet-->
+        <link href="styles/main.css" rel="stylesheet" type="text/css" media="all"/>
+        <!--End of style sheet-->
+    <title>Comet Studio</title>
+    </head>
+    <body>
+    <header>
+        <head>
+            <h1>Welcome to Comet Studio!</h1>
+        </head>
+        <!--Logo-->
+        <div class="logo">
+        <img
+        src="images/logo.jpg"
+        alt="Comet Studio's logo">
+        <div class="bottomright"><strong>Comet Studio</strong></div>
+    </div>
+    <!--End ofLogo-->
+    </header>
+    <p>I love all forms of art. Art speaks in ways in ways that words cannot. Colors, flavors, sounds, shapes, and lines connect us to every person and every thing in our world, and I am intrigued to play my part.
+    </p>
+    <br>
+<!-- Access point for lightbox -->
+
+     <div class="row">
+      <div class="col">
+         <img src="images/bubbles.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview" alt="Bubbles" />
+      </div>
+      <div class="col">
+         <img src="images/flower.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview" alt="Flower" />
+      </div>
+      <div class="col">
+         <img src="images/maple.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview" alt="Maple" /></div>
+         <div class="col">
+          <img src="images/purple.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview" alt="Purple" />
+       </div>
+      </div>
+    </div>
+    <!--End access point-->
+    <!-- Lightbox Modal, images, dots.-->     
+<div id="Lightbox" class="modal">
+  <span class="close pointer" onclick="closeLightbox()">&times;</span>
+  <div class="modal-content">
+    <div class="slide">
+        <img src="images/bubbles.jpg" class="image-slide" alt="Bubbles" />
+    </div>
+    <div class="slide">
+        <img src="images/flower.jpg" class="image-slide" alt="Flower" />
+    </div>    
+    <div class="slide">
+        <img src="images/maple.jpg" class="image-slide" alt="Maple" />
+    </div>
+    <div class="slide">
+      <img src="images/purple.jpg" class="image-slide" alt="Purple" />
+  </div>
+  
+    <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
+    <a class="next" onclick="changeSlide(1)">&#10095;</a>
+  
+    <div class="dots">
+      <div class="col">
+        <img src="images/bubbles.jpg" class="modal-preview hover-shadow" onclick="toSlide(1)" alt="bubbles" />
+      </div>
+      <div class="col">
+        <img src="images/flower.jpg" class="modal-preview hover-shadow" onclick="toSlide(2)" alt="Flower" />
+      </div>
+      <div class="col">
+        <img src="images/maple.jpg" class="modal-preview hover-shadow" onclick="toSlide(3)" alt="Maple" />
+      </div>
+      <div class="col">
+        <img src="images/purple.jpg" class="modal-preview hover-shadow" onclick="toSlide(4)" alt="Purple" />
+    </div>
+  </div>
+</div>
+<!--End of lightbox-->
+<script src="scripts/main.js"></script>
+<br>
+<br>
+    </div>
+  </div> 
+    </body>
+    </html>
