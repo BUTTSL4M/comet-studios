@@ -186,17 +186,29 @@ img.hover-shadow {
 /*End lightbox*/
 
 
-@media screen and (max-width: 481px){
+@media only screen and (max-width: 481px){
 
   html {      
     float: left;  
     padding:0; 
-    width: 94%;    /*3%+94%+3%=100%=full width*/
-    margin: 3%;    /*3% margin spaces on all sides*/    
+    width: auto;
   }  
   
   
   .logo {
     font-size: 45px;
-    max-width: 100%;
+    width: auto;
   }
+  .modal {
+  width: auto;
+}
+  .modal-content {
+  width: auto;
+}
+  .image-slide {
+  width: auto;
+}
+  .modal-preview {
+  width: auto;
+}
+}
