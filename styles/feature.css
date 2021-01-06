@@ -1,0 +1,161 @@
+/* line 1, ../../johnbuttram/comet-studios/scss/feature.scss */
+.feature {
+  position: absolute;
+  margin: 25px auto;
+  width: 300px;
+  text-align: center;
+  left: 15%;
+}
+
+/* line 8, ../../johnbuttram/comet-studios/scss/feature.scss */
+.feature__glitch {
+  font-size: 42px;
+  color: #fff;
+  margin: 0;
+  padding: 0;
+  line-height: 1em;
+  position: absolute;
+  width: 225px;
+  left: 50px;
+  top: 10px;
+  text-align: center;
+}
+
+/* line 20, ../../johnbuttram/comet-studios/scss/feature.scss */
+.feature__glitch:before, .feature__glitch:after {
+  font-size: 42px;
+  line-height: 1em;
+  font-weight: bold;
+  background: #000000;
+  clip: rect(0, 900px, 0, 0);
+  color: #fff;
+  content: "Mary \A Jannett's";
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  text-align: center;
+}
+
+/* line 36, ../../johnbuttram/comet-studios/scss/feature.scss */
+.feature__glitch:before {
+  animation: glitch-1 5s 1 linear alternate-reverse;
+  left: 35px;
+  text-shadow: 1px 0 #40bad8;
+}
+
+/* line 42, ../../johnbuttram/comet-studios/scss/feature.scss */
+.feature__glitch:after {
+  animation: glitch-2 3s 1 linear alternate-reverse;
+  left: 30px;
+  text-shadow: -1px 0 #f00;
+}
+
+@keyframes glitch-1 {
+  0% {
+    clip: rect(16px, 9999px, 126px, 0);
+  }
+  6.25% {
+    clip: rect(60px, 9999px, 28px, 0);
+  }
+  12.5% {
+    clip: rect(55px, 9999px, 153px, 0);
+  }
+  18.75% {
+    clip: rect(26px, 9999px, 246px, 0);
+  }
+  25% {
+    clip: rect(93px, 9999px, 294px, 0);
+  }
+  31.25% {
+    clip: rect(66px, 9999px, 131px, 0);
+  }
+  37.5% {
+    clip: rect(34px, 9999px, 298px, 0);
+  }
+  43.75% {
+    clip: rect(75px, 9999px, 187px, 0);
+  }
+  50% {
+    clip: rect(49px, 9999px, 82px, 0);
+  }
+  56.25% {
+    clip: rect(76px, 9999px, 36px, 0);
+  }
+  62.5% {
+    clip: rect(29px, 9999px, 181px, 0);
+  }
+  68.75% {
+    clip: rect(70px, 9999px, 77px, 0);
+  }
+  75% {
+    clip: rect(22px, 9999px, 88px, 0);
+  }
+  81.25% {
+    clip: rect(84px, 9999px, 174px, 0);
+  }
+  87.5% {
+    clip: rect(66px, 9999px, 276px, 0);
+  }
+  93.75% {
+    clip: rect(3px, 9999px, 255px, 0);
+  }
+  100% {
+    clip: rect(86px, 9999px, 216px, 0);
+  }
+}
+
+@keyframes glitch-2 {
+  0% {
+    clip: rect(19px, 9999px, 40px, 0);
+  }
+  6.25% {
+    clip: rect(69px, 9999px, 70px, 0);
+  }
+  12.5% {
+    clip: rect(16px, 9999px, 147px, 0);
+  }
+  18.75% {
+    clip: rect(100px, 9999px, 52px, 0);
+  }
+  25% {
+    clip: rect(74px, 9999px, 274px, 0);
+  }
+  31.25% {
+    clip: rect(71px, 9999px, 190px, 0);
+  }
+  37.5% {
+    clip: rect(83px, 9999px, 50px, 0);
+  }
+  43.75% {
+    clip: rect(62px, 9999px, 87px, 0);
+  }
+  50% {
+    clip: rect(22px, 9999px, 192px, 0);
+  }
+  56.25% {
+    clip: rect(24px, 9999px, 177px, 0);
+  }
+  62.5% {
+    clip: rect(27px, 9999px, 298px, 0);
+  }
+  68.75% {
+    clip: rect(100px, 9999px, 284px, 0);
+  }
+  75% {
+    clip: rect(22px, 9999px, 88px, 0);
+  }
+  81.25% {
+    clip: rect(16px, 9999px, 286px, 0);
+  }
+  87.5% {
+    clip: rect(20px, 9999px, 175px, 0);
+  }
+  93.75% {
+    clip: rect(48px, 9999px, 294px, 0);
+  }
+  100% {
+    clip: rect(91px, 9999px, 31px, 0);
+  }
+}
+
+/*# sourceMappingURL=feature.css.map */

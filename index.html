@@ -16,197 +16,11 @@
     />
     <!-- MDB -->
     <link rel="stylesheet" href="css/mdb.min.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="styles/glitch.css">
+    <link rel="stylesheet" href="styles/feature.css">
     <!-- Custom styles -->
-    <style>
-      /* css reset*/
 
-html {
-  box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-}
-/*General Page Layout */
-body {
-background-image: url("images/background.jpg");
-background-size: cover;
-background-repeat: no-repeat;
-background-color: #000;
-color: #FFF;
-display: block;
-font-family: Arial, Helvetica, sans-serif;
-font-size: 14px;
-font-weight: 44;
-}
-
-h1 {
-font-size: 35px;
-font-weight: 44;
-text-align: center;
-}
-
-p {
-    text-align: center;
-    width: 256px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-}
-/*Logo styling*/
-.logo {
-    position: relative;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-    height: auto;
-    padding-top: 20px;
-}
-.bottomright {
-    position: absolute;
-    bottom: 8px;
-    right: 50px;
-    font-size: 18px; 
-    font-weight: 50;
-    color: #FFF;   
-}
-
-/* Preview styles */
-
-.preview {
-  width: 100%;
-}
-
-.row {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.row > .col {
-  padding: 0 8px;
-}
-
-.col {
-  float: left;
-  width: 25%;
-}
-
-/* Lightbox style */
-   
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  padding: 10px 62px 0px 62px;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: scroll;
-  background-color: rgb(26, 3, 31);
-}
-
-.modal-content {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin: auto;
-  padding: 0 0 0 0;
-  width: 80%;
-  max-width: 1200px;
-}
-
-/* Slides styles */
-
-.slide {
-  display: none;
-}
-
-.image-slide {
-  width: 100%;
-}
-
-.modal-preview {
-  width: 100%;
-}
-
-.dots {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-/* Previews */
-
-img.preview, img.modal-preview {
-  opacity: 0.6;
-}
-
-img.active,
-.preview:hover,
-.modal-preview:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-} 
-
-.close {
-  color: white;
-  position: absolute;
-  top: 10px;
-  right: 25px;
-  font-size: 35px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #999;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.previous,
-.next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -50px;
-  color: white;
-  font-weight: bold;
-  font-size: 20px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-  -webkit-user-select: none;
-}
-
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.previous:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-}
-/*End lightbox*/
-    </style>
   </head>
   <body>
     <!-- Start your project here-->
@@ -214,34 +28,36 @@ img.hover-shadow {
       <header>
           <head>
             <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-              <h1>Welcome to Comet Studio!</h1>
           </head>
           <!--Logo-->
+          <div class="feature">
+          <h1 class="feature__glitch" style="font-size: 42px;">Mary<br>Jannett's</h1>
+        </div>
           <div class="logo">
           <img
-          src="images/logo.jpg"
+          src="images/logo.png"
+          style="filter: invert(100%);"
           class="img-fluid"
           alt="Comet Studio's logo">
-          <div class="bottomright"><strong>Comet Studio</strong></div>
+          <div class="glitch bottomright" data-text="Comet Studio"><strong>Comet Studio</strong></div>
       </div>
       <!--End ofLogo-->
       </header>
       <p>I love all forms of art. Art speaks in ways in ways that words cannot. Colors, flavors, sounds, shapes, and lines connect us to every person and every thing in our world, and I am intrigued to play my part.
       </p>
-      <br>
   <!-- Access point for lightbox -->
   
-       <div class="row">
+       <div class="row" style="background-color: rgb(26, 3, 31);">
         <div class="col">
-           <img src="images/bubbles.jpg" onclick="openLightbox();toSlide(1)" class="hover-shadow preview img-fluid" alt="Bubbles" />
+           <img src="images/01.png" onclick="openLightbox();toSlide(1)" class="hover-shadow preview img-fluid" alt="Bubbles" />
         </div>
         <div class="col">
-           <img src="images/flower.jpg" onclick="openLightbox();toSlide(2)" class="hover-shadow preview img-fluid" alt="Flower" />
+           <img src="images/02.png" onclick="openLightbox();toSlide(2)" class="hover-shadow preview img-fluid" alt="Flower" />
         </div>
         <div class="col">
-           <img src="images/maple.jpg" onclick="openLightbox();toSlide(3)" class="hover-shadow preview img-fluid" alt="Maple" /></div>
+           <img src="images/03.png" onclick="openLightbox();toSlide(3)" class="hover-shadow preview img-fluid" alt="Maple" /></div>
            <div class="col">
-            <img src="images/purple.jpg" onclick="openLightbox();toSlide(4)" class="hover-shadow preview img-fluid" alt="Purple" />
+            <img src="images/04.png" onclick="openLightbox();toSlide(4)" class="hover-shadow preview img-fluid" alt="Purple" />
          </div>
         </div>
       </div>
@@ -251,16 +67,16 @@ img.hover-shadow {
     <span class="close pointer" onclick="closeLightbox()">&times;</span>
     <div class="modal-content">
       <div class="slide">
-          <img src="images/bubbles.jpg" class="image-slide img-fluid" alt="Bubbles" />
+          <img src="images/01.png" class="image-slide img-fluid" alt="Bubbles" />
       </div>
       <div class="slide">
-          <img src="images/flower.jpg" class="image-slide img-fluid" alt="Flower" />
+          <img src="images/02.png" class="image-slide img-fluid" alt="Flower" />
       </div>    
       <div class="slide">
-          <img src="images/maple.jpg" class="image-slide img-fluid" alt="Maple" />
+          <img src="images/03.png" class="image-slide img-fluid" alt="Maple" />
       </div>
       <div class="slide">
-        <img src="images/purple.jpg" class="image-slide img-fluid" alt="Purple" />
+        <img src="images/04.png" class="image-slide img-fluid" alt="Purple" />
     </div>
     
       <a class="previous" onclick="changeSlide(-1)">&#10094;</a>
@@ -268,16 +84,16 @@ img.hover-shadow {
     
       <div class="dots">
         <div class="col">
-          <img src="images/bubbles.jpg" class="modal-preview hover-shadow img-fluid" onclick="toSlide(1)" alt="bubbles" />
+          <img src="images/01.png" style="filter: invert(100%);" class="modal-preview hover-shadow img-fluid" onclick="toSlide(1)" alt="bubbles" />
         </div>
         <div class="col">
-          <img src="images/flower.jpg" class="modal-preview hover-shadow img-fluid" onclick="toSlide(2)" alt="Flower" />
+          <img src="images/02.png" style="filter: invert(100%);" class="modal-preview hover-shadow img-fluid" onclick="toSlide(2)" alt="Flower" />
         </div>
         <div class="col">
-          <img src="images/maple.jpg" class="modal-preview hover-shadow img-fluid" onclick="toSlide(3)" alt="Maple" />
+          <img src="images/03.png" style="filter: invert(100%);" class="modal-preview hover-shadow img-fluid" onclick="toSlide(3)" alt="Maple" />
         </div>
         <div class="col">
-          <img src="images/purple.jpg" class="modal-preview hover-shadow img-fluid" onclick="toSlide(4)" alt="Purple" />
+          <img src="images/04.png" style="filter: invert(100%);" class="modal-preview hover-shadow img-fluid" onclick="toSlide(4)" alt="Purple" />
       </div>
     </div>
   </div>

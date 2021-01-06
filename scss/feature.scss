@@ -1,0 +1,113 @@
+.feature {
+    position: relative;
+    margin: 150px auto;
+    width: 300px;
+    text-align: center;
+  }
+  
+  .feature__glitch {
+    font-size: 64px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    line-height: 1em;
+    position: absolute;
+    width: 200px;
+    left: 50px;
+    top: 10px;
+    text-align: center;
+    
+    &:before,
+    &:after {
+      font-size: 64px;
+      line-height: 1em;
+      font-weight: bold;
+      background: #2e3035;
+      clip: rect(0, 900px, 0, 0);
+      color: #fff;
+      content: "what \A the \A hack";
+      white-space: pre;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      text-align: center;
+    }
+    
+    &:before {
+      animation: glitch-1 5s infinite linear alternate-reverse;
+      left: 35px;
+      text-shadow: 1px 0 #40bad8;
+    }
+    
+    &:after {
+      animation: glitch-2 3s infinite linear alternate-reverse;
+      left: 30px;
+      text-shadow: -1px 0 #f00;
+    }
+  }
+  
+  .feature__span {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-top: 200px;
+    font-size: 11px;
+    position: absolute;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+  
+  @keyframes glitch-1{
+      @for $i from 0 through 16 {
+          #{percentage($i*(1/16))}{
+              clip: rect(random(100)+px, 9999px, random(300)+px, 0);
+          }
+      }
+  }
+  
+  @keyframes glitch-2{
+      @for $i from 0 through 16 {
+          #{percentage($i*(1/16))}{
+              clip: rect(random(100)+px, 9999px, random(300)+px,0);
+          }
+      }
+  }
+  
+  .feature__dash,
+  .feature__line {
+    position: absolute;
+    background: #00ffda
+  }
+  
+  .feature__dash--1 {
+    width: 5px;
+    height: 40px;
+    top: -15px;
+    left: 25px;
+    transform: skew(30deg);
+  }
+  
+  .feature__dash--2 {
+    width: 30px;
+    height: 4px;
+    right: 5px;
+    top: 30px;
+  }
+  
+  .feature__line {
+    width: 1px;
+    height: 120px;
+  }
+  
+  .feature__line--1 {
+    bottom: -50px;
+    left: 160px;
+    transform: rotate(-30deg);
+  }
+  
+  .feature__line--2 {
+    bottom: -50px;
+    left: 140px;
+    transform: rotate(30deg);
+  }
