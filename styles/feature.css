@@ -9,21 +9,20 @@
 
 /* line 8, ../../johnbuttram/comet-studios/scss/feature.scss */
 .feature__glitch {
-  font-size: 4vw;
+  font-size: 2vw;
   color: #fff;
   margin: 0;
   padding: 0;
   line-height: 1em;
-  position: fixed;
+  position: absolute;
   width: 225px;
-  left: 50px;
-  top: 10px;
+   top: 10px;
   text-align: center;
 }
 
 /* line 20, ../../johnbuttram/comet-studios/scss/feature.scss */
 .feature__glitch:before, .feature__glitch:after {
-  font-size: 4vw;
+  font-size: 2vw;
   line-height: 1em;
   font-weight: bold;
   background: #000000;
@@ -31,7 +30,7 @@
   color: #fff;
   content: "Mary Jannett's";
   overflow: hidden;
-  position: fixed;
+  position: absolute;
   top: 0;
   text-align: center;
 }

@@ -44,9 +44,9 @@ height: 25%;;
 
 
 .bottomright {
-position: absolute !important;
-bottom: 8px !important;
-right: 25px !important;
+position: sticky !important;
+text-align: end;
+
 font-size: 35px; 
 font-weight: 50;
 color: #FFF; 
