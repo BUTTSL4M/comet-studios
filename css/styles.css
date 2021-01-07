@@ -14,9 +14,10 @@ margin: 0;
 /*General Page Layout */
 body {
 background-image: url("../images/background.jpg");
-background-size: contain;
+background-size: cover;
 background-repeat: no-repeat;
 background-color: #000;
+background-position: center center;
 color: #FFF;
 display: block;
 font-family: Arial, Helvetica, sans-serif;

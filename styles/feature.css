@@ -9,12 +9,12 @@
 
 /* line 8, ../../johnbuttram/comet-studios/scss/feature.scss */
 .feature__glitch {
-  font-size: 42px;
+  font-size: 4vw;
   color: #fff;
   margin: 0;
   padding: 0;
   line-height: 1em;
-  position: absolute;
+  position: fixed;
   width: 225px;
   left: 50px;
   top: 10px;
@@ -23,15 +23,15 @@
 
 /* line 20, ../../johnbuttram/comet-studios/scss/feature.scss */
 .feature__glitch:before, .feature__glitch:after {
-  font-size: 42px;
+  font-size: 4vw;
   line-height: 1em;
   font-weight: bold;
   background: #000000;
   clip: rect(0, 900px, 0, 0);
   color: #fff;
-  content: "Mary \A Jannett's";
+  content: "Mary Jannett's";
   overflow: hidden;
-  position: absolute;
+  position: fixed;
   top: 0;
   text-align: center;
 }
